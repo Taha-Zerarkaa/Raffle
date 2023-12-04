@@ -11,7 +11,7 @@ developmentChains.includes(network.name)
               deployer = (await getNamedAccounts()).deployer
               raffle = await ethers.getContract("Raffle", deployer)
               raffleEntranceFee = await raffle.getEntranceFee()
-          })
+          })  
 
           describe("fulfillRandomWords", function () {
               it("works with live Chainlink Keepers and Chainlink VRF, we get a random winner", async function () {

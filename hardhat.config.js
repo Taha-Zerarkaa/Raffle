@@ -15,7 +15,7 @@ const MAINNET_RPC_URL =
     process.env.ALCHEMY_MAINNET_RPC_URL ||
     "https://eth-mainnet.alchemyapi.io/v2/your-api-key"
 const SEPOLIA_RPC_URL =
-    process.env.SEPOLIA_RPC_URL || "https://eth-sepolia.g.alchemy.com/v2/YOUR-API-KEY"
+    process.env.SEPOLIA_RPC_URL || "https://rpc.sepolia.ethpandaops.io"
 const POLYGON_MAINNET_RPC_URL =
     process.env.POLYGON_MAINNET_RPC_URL || "https://polygon-mainnet.alchemyapi.io/v2/your-api-key"
 const PRIVATE_KEY = process.env.PRIVATE_KEY || "0x"

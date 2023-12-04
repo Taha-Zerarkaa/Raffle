@@ -31,7 +31,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
     bytes32 private immutable i_gasLane;
     uint32 private immutable i_callbackGasLimit;
     uint16 private constant REQUEST_CONFIRMATIONS = 3;
-    uint32 private constant NUM_WORDS = 1;
+    uint32 private constant NU M_WORDS = 1;
 
     // Lottery Variables
     uint256 private immutable i_interval;
@@ -147,7 +147,7 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
         // s_players size 10
         // randomNumber 202
         // 202 % 10 ? what's doesn't divide evenly into 202?
-        // 20 * 10 = 200
+        // 20 * 10 = 200 
         // 2
         // 202 % 10 = 2
         uint256 indexOfWinner = randomWords[0] % s_players.length;
@@ -202,3 +202,6 @@ contract Raffle is VRFConsumerBaseV2, AutomationCompatibleInterface {
         return s_players.length;
     }
 }
+
+
+
